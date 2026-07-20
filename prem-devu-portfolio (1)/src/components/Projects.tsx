@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Sun, Coffee, Bell, Activity, ClipboardList, Wrench, Settings, X, Globe, Github } from "lucide-react";
+import sadhyaImage from "../../assets/Images/sadhya.png";
+import fitifyImage from "../../assets/Images/project3.png";
+import artjunaImage from "../../assets/Images/Artjuna.png";
+import safehomeImage from "../../assets/Images/Safehome.png";
+import taxmizeImage from "../../assets/Images/Taxmize.png";
+import trackerflowImage from "../../assets/Images/TrackFlow.png";
+import indiapostImage from "../../assets/Images/Post.png";
+import autonestImage from "../../assets/Images/Car.png";
 
 interface Project {
   id: string;
@@ -32,7 +40,7 @@ export default function Projects() {
       description: "Designed an AI-powered agricultural companion app that helps farmers make smarter decisions with real-time insights on crops, weather, market prices, and expert advisory.",
       tags: ["Figma", "Lovable", "Gemini AI"],
       link: "#",
-      image: "assets/Images/sadhya.png?auto=format&fit=crop&q=80&w=600",
+      image: sadhyaImage,
       mockupType: "sadhya",
       features: [
         "Real-time crop disease diagnosis using multi-modal AI scans",
@@ -53,7 +61,7 @@ export default function Projects() {
       description: "Designed a fitness platform that connects users with professional gym trainers, personalized diet plans, and healthy food ordering services in one ecosystem.",
       tags: ["Figma", "ChatGPT", "Google Stitch"],
       link: "#",
-      image: "assets/Images/project3.png?auto=format&fit=crop&q=80&w=600",
+      image: fitifyImage,
       mockupType: "fitify",
       features: [
         "Trainer discovery with filters (location, specialization, pricing)",
@@ -75,7 +83,7 @@ export default function Projects() {
       description: "Crafted a delightful mobile experience for a cafe app that offers seamless food ordering, table booking, exclusive offers, and personalized recommendations.",
       tags: ["Figma", "Miro", "ChatGPT"],
       link: "#",
-      image: "assets/Images/Artjuna.png?auto=format&fit=crop&q=80&w=600",
+      image: artjunaImage,
       mockupType: "artjuna",
       features: [
         "Contactless QR-code smart tableside food ordering system",
@@ -96,7 +104,7 @@ export default function Projects() {
       description: "Developed a smart community management app that enhances security, communication, and facility management for residents and administrators in gated communities.",
       tags: ["Figma", "Gemini AI", "Google Forms"],
       link: "#",
-      image: "assets/Images/safehome.png?auto=format&fit=crop&q=80&w=600",
+      image: safehomeImage,
       mockupType: "safehome",
       features: [
         "Pre-approved visitor digital gate entry control panel",
@@ -117,7 +125,7 @@ export default function Projects() {
       description: "Designed a user-friendly tax filing platform for the US market, simplifying complex tax processes with smart guidance, secure data handling, and a clear step-by-step experience.",
       tags: ["Figma", "ChatGPT", "Notion"],
       link: "#",
-      image: "assets/Images/Taxmize.png?auto=format&fit=crop&q=80&w=600",
+      image: taxmizeImage,
       mockupType: "taxmize",
       features: [
         "Step-by-step smart tax classification wizard with responsive tips",
@@ -138,7 +146,7 @@ export default function Projects() {
       description: "Designed an AI-powered employee management system that helps organizations monitor work progress, attendance, and leave management efficiently.",
       tags: ["Figma", "Google Stitch", "Motiff"],
       link: "#",
-      image: "assets/Images/TrackFlow.png?auto=format&fit=crop&q=80&w=600",
+      image: trackerflowImage,
       mockupType: "carservice2",
       features: [
         "Real-time employee activity tracking",
@@ -160,7 +168,7 @@ export default function Projects() {
       description: "Conducted a usability evaluation of the Indian Post digital platform using Jakob Nielsen's 10 Usability Heuristics.",
       tags: ["UX Research Methods", "Notion"],
       link: "#",
-      image: "assets/Images/Post.png?auto=format&fit=crop&q=80&w=600",
+      image: indiapostImage,
       mockupType: "indiapost",
       features: [
         "Evaluation using Nielsen's 10 heuristics",
@@ -182,7 +190,7 @@ export default function Projects() {
       description: "Designed a mobile application that allows users to book car services, track service status, and manage vehicle maintenance.",
       tags: ["Figma", "Notion", "Miro"],
       link: "#",
-      image: "assets/Images/Car.png?auto=format&fit=crop&q=80&w=600",
+      image: autonestImage,
       mockupType: "carservice1",
       features: [
         "Easy booking with doorstep pickup",
@@ -709,7 +717,7 @@ export default function Projects() {
                 <div className="md:w-1/2 bg-[#1a1a1a] p-0 flex items-center justify-center relative overflow-hidden group-hover:bg-[#222222]/90 transition-colors">
                   {/* Embedded screen container */}
                   <img
-                    src={project.image ?? "assets/Images/sadhya.png?auto=format&fit=crop&q=80&w=600"}
+                    src={project.image ?? sadhyaImage}
                     alt={`${project.title} preview`}
                   />
                 </div>
@@ -810,7 +818,7 @@ export default function Projects() {
               {/* Left Side: Mockup Frame (Visual Screenshot) */}
               <div className="md:w-[45%] bg-[#1a1a1a] p-0 flex items-center justify-center relative overflow-hidden border-r border-white/5 min-h-[300px] md:min-h-auto align-self-baseline" style={{ alignSelf: "baseline" }}>
                 <img
-                  src={selectedProject.image ?? "assets/Images/project2.png?auto=format&fit=crop&q=80&w=600"}
+                  src={selectedProject.image ?? sadhyaImage}
                   alt={`${selectedProject.title} preview`}
                 />
               </div>
