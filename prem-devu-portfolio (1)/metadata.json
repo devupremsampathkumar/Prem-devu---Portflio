@@ -1,0 +1,6 @@
+{
+  "name": "Prem Devu Portfolio",
+  "description": "A high-fidelity interactive UX Designer portfolio for Prem Devu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
