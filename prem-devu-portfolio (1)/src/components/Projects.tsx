@@ -32,7 +32,7 @@ export default function Projects() {
       description: "Designed an AI-powered agricultural companion app that helps farmers make smarter decisions with real-time insights on crops, weather, market prices, and expert advisory.",
       tags: ["Figma", "Lovable", "Gemini AI"],
       link: "#",
-      image: "assets/Images/project11.png?auto=format&fit=crop&q=80&w=600",
+      image: "assets/Images/sadhya.png?auto=format&fit=crop&q=80&w=600",
       mockupType: "sadhya",
       features: [
         "Real-time crop disease diagnosis using multi-modal AI scans",
@@ -709,7 +709,7 @@ export default function Projects() {
                 <div className="md:w-1/2 bg-[#1a1a1a] p-0 flex items-center justify-center relative overflow-hidden group-hover:bg-[#222222]/90 transition-colors">
                   {/* Embedded screen container */}
                   <img
-                    src={project.image ?? "assets/Images/project11.png?auto=format&fit=crop&q=80&w=600"}
+                    src={project.image ?? "assets/Images/sadhya.png?auto=format&fit=crop&q=80&w=600"}
                     alt={`${project.title} preview`}
                   />
                 </div>
