@@ -1,5 +1,6 @@
 import { ArrowUpRight, Eye } from "lucide-react";
 import { motion } from "motion/react";
+import profilePic from "../../assets/Images/profile_pic.jpeg";
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -158,7 +159,7 @@ export default function Hero() {
               {/* Subtle overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/40 via-transparent to-transparent z-10 pointer-events-none" />
               <img
-                src="assets/Images/profile_pic.jpeg?auto=format&fit=crop&q=80&w=600"
+                src={profilePic}
                 alt="Prem Devu Portrait"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center relative z-0 transition-transform duration-[800ms] group-hover:scale-110"

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowUpRight, Sun, Coffee, Bell, Activity, ClipboardList, Wrench, Settings, X, Globe, Github } from "lucide-react";
+import { ArrowUpRight, Sun, Coffee, Bell, Activity, ClipboardList, Wrench, Settings, X } from "lucide-react";
 import sadhyaImage from "../../assets/Images/sadhya.png";
 import fitifyImage from "../../assets/Images/project3.png";
 import artjunaImage from "../../assets/Images/Artjuna.png";
@@ -890,27 +890,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Links / Action Footer */}
-                <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-white/5">
-                  <a
-                    href={selectedProject.liveDemoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-brand-purple hover:bg-white text-black text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 shadow-md cursor-pointer text-center"
-                  >
-                    <Globe className="w-4 h-4 shrink-0" />
-                    <span>Live Demo</span>
-                  </a>
-                  <a
-                    href={selectedProject.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full border border-white/10 hover:border-brand-purple/40 bg-white/[0.02] hover:bg-brand-purple/10 text-white text-[11px] font-extrabold uppercase tracking-widest transition-all duration-300 cursor-pointer text-center"
-                  >
-                    <Github className="w-4 h-4 shrink-0" />
-                    <span>GitHub Repo</span>
-                  </a>
-                </div>
               </div>
             </motion.div>
           </motion.div>
